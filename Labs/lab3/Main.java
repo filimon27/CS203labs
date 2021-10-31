@@ -17,6 +17,7 @@ public class Main {
         personList.add(dad);
         personList.add(mom);
 
+
          for( Person p: personList)
              System.out.println(p.toString());
 

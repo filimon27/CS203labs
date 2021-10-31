@@ -13,7 +13,38 @@ public class AddressBook {
         this.note=note;
     }
 
-  //  public String toString(){
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+//  public String toString(){
        // return "NO_ of phone numbers : " + numOfPhoneNumbers + " NO_ of email Addresses : " + numOfEmailAddresses + ""
     //}
 
