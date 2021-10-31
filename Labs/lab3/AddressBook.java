@@ -1,14 +1,14 @@
 package Labs.lab3;
 
 public class AddressBook {
-    private int numOfPhoneNumbers;
-    private int numOfEmailAddresses;
+    private String phoneNumber;
+    private String emailAddress;
     private Address address;
     private String note;
 
-    AddressBook( int  numOfPhoneNumbers, int numOfEmailAddresses, Address address, String note){
-        this.numOfPhoneNumbers= numOfPhoneNumbers;
-        this.numOfEmailAddresses= numOfEmailAddresses;
+    AddressBook( String  phoneNumber, String emailAddress, Address address, String note){
+        this.phoneNumber=phoneNumber;
+        this.emailAddress= emailAddress;
         this.address= address;
         this.note=note;
     }

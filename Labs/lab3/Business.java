@@ -3,8 +3,8 @@ package Labs.lab3;
 public class Business extends AddressBook {
     private String name;
 
-    public Business(String name){
-        super( 5,5, new Address("business","1000S.6th st","FF","IA","52556"),"put your additional information here");
+    public Business(String name,String phoneNumber, String emailAddress, Address address, String note){
+        super( phoneNumber,emailAddress,address,note);
         this.name=name;
     }
     @Override

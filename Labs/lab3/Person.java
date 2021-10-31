@@ -4,8 +4,8 @@ public class Person extends AddressBook{
      private String fName;
      private String lName;
 
-     public Person(String fName,String lName){
-         super(4,3,new Address("home","1000N.5th st","FF","IA","52557"),"put your additional information here");
+     public Person(String fName,String lName,String phoneNumber, String emailAddress, Address address, String note ){
+         super(phoneNumber,emailAddress,address,note);
          this.fName=fName;
          this.lName=lName;
 
