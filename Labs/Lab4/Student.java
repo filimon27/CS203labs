@@ -29,7 +29,7 @@ public class Student implements Comparable<Student> {
         this.idNumber = idNumber;
     }
 
-    @Override
+   /* @Override
     public int compareTo(Student o) {
         if(this.idNumber>o.idNumber)
             return 1;
@@ -37,19 +37,17 @@ public class Student implements Comparable<Student> {
             return 0;
         else
             return -1;
-    }
+    }*/
 
     @Override
     public String toString() {
         return lastName+ " " + idNumber;
     }
 
-   /* public int compare(Object o1,Object o2){
-        Student s1=(Student)o1;
-        Student s2=(Student)o2;
 
-        return s1.lastName.compareTo(s2.lastName);
-    }*/
+    @Override
+    public int compareTo(Student o){
+       return lastName.compareTo(o.lastName);}
 }
 
 
