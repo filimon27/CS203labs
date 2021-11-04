@@ -19,6 +19,7 @@ public class EmployeeTest {
         System.out.println(manager.addBonus());
 
         System.out.println(manager.equals(clerk));
+        System.out.println(manager.equals(manager));
 
 
         }

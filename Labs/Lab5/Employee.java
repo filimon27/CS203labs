@@ -58,7 +58,10 @@ public class Employee {
 
     @Override
     public boolean equals(Object obj) {
-        return designation.equals(obj);
+        if(obj==null) return false;
+        if(!(obj instanceof Employee) )return false;
+        Employee e= (Employee)obj;
+        return designation.equals(e.designation);
     }
     public int addBonus(){
         salary=salary+DEFAULT_BONUS;
