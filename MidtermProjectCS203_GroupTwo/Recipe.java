@@ -2,7 +2,7 @@ package MidtermProjectCS203_GroupTwo;
 
  public class Recipe implements Cloneable {
     private  String recipeName;
-    private String [] ingredients;
+    private String ingredients;
     private   String instructions;
     private  int prepTime;
     private  int cookTime;
@@ -10,14 +10,14 @@ package MidtermProjectCS203_GroupTwo;
 
     public Recipe() {
         recipeName="shiro";
-        ingredients=new String[]{"berbere","chickPea","cookingOil","onions","salt","water","kibe"};
+        ingredients="berbere,chickPea,cookingOil,onions,salt,water,kibe";
         instructions="just mix it together";
         prepTime=30;
         cookTime=20;
         servings=4;
     }
 
-    public Recipe(String recipeName, String[] ingredients, String instructions, int prepTime, int cookTime, int servings) {
+    public Recipe(String recipeName, String ingredients, String instructions, int prepTime, int cookTime, int servings) {
         this.recipeName = recipeName;
         this.ingredients = ingredients;
         this.instructions = instructions;
@@ -34,11 +34,11 @@ package MidtermProjectCS203_GroupTwo;
          this.recipeName = recipeName;
      }
 
-     public String[] getIngredients() {
+     public String getIngredients() {
          return ingredients;
      }
 
-     public void setIngredients(String[] ingredients) {
+     public void setIngredients(String ingredients) {
          this.ingredients = ingredients;
      }
      public String getInstructions() {
