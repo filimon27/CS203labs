@@ -1,6 +1,8 @@
 package MidtermProjectCS203_GroupTwo;
 
-public class GamingVideo extends Video implements GamingVideos{
+import java.util.Comparator;
+
+public class GamingVideo extends Video implements GamingVideos {
     private String name;
 
     public GamingVideo() {
@@ -25,4 +27,6 @@ public class GamingVideo extends Video implements GamingVideos{
     public String getGameName() {
         return getName();
     }
+
+
 }

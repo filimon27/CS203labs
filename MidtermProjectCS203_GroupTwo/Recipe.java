@@ -82,4 +82,16 @@ package MidtermProjectCS203_GroupTwo;
              return cloned;
 
     }
-}
+
+     @Override
+     public String toString() {
+         return "Recipe{" +
+                 "recipeName='" + recipeName + '\'' +
+                 ", ingredients='" + ingredients + '\'' +
+                 ", instructions='" + instructions + '\'' +
+                 ", prepTime=" + prepTime +
+                 ", cookTime=" + cookTime +
+                 ", servings=" + servings +
+                 '}';
+     }
+ }

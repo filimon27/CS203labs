@@ -36,8 +36,13 @@ public  class CookingVideo extends Video implements CookingVideos{
 
     @Override
     public String printRecipe() {
-        return "Dish :" +recipe.getRecipeName() + "\n ingredients : " + Arrays.toString(getIngridentsList()) + "\n Directions" + recipe.getInstructions() + "\n Prep Time: " + recipe.getPrepTime() + "\n Cooking Time :" + recipe.getCookTime() + "Serving Size :" +recipe.getServings();
+        return   "Dish :" +recipe.getRecipeName() + "\n ingredients : " + Arrays.toString(getIngridentsList()) + "\n Directions" + recipe.getInstructions() + "\n Prep Time: " + recipe.getPrepTime() + "\n Cooking Time :" + recipe.getCookTime() + "Serving Size :" +recipe.getServings();
     }
 
-
+    @Override
+    public String toString() {
+        return "CookingVideo{" +
+                "recipe=" + recipe +
+                '}'+super.toString();
+    }
 }
