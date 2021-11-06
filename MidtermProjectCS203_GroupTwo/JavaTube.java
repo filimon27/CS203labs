@@ -76,12 +76,12 @@ public   class JavaTube {
         }
     }
 
-   /* void sortCookingVideoByServingSizeDescending implements CookingVideos(){
+   Comparator<CookingVideo>sortCookingVideoByServingSizeDescending = new Comparator<CookingVideo>(){
         @Override
         public int compare(CookingVideo o1, CookingVideo o2) {
             return (o1.getCookingRecipe().getServings()-o2.getCookingRecipe().getServings())*-1;
         }
-    })*/
+    };
 
 
     static void printAllCookingRecipes( CookingVideo[] cookingVideos){
